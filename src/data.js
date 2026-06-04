@@ -87,8 +87,8 @@ export const cuartos = [
     tag: "HISTÓRICO",
   },
   { home: "Países Bajos", away: "Francia", winner: "Países Bajos", note: "Holanda elimina a Francia" },
-  { home: "España", away: "Japón", winner: "España", note: "España avanza a semis" },
-  { home: "Inglaterra", away: "Croacia", winner: "Inglaterra", note: "Inglaterra avanza a semis" },
+  { home: "España", away: "Corea del Sur", winner: "España", note: "España avanza a semis" },
+  { home: "Inglaterra", away: "Alemania", winner: "Inglaterra", note: "Inglaterra avanza a semis" },
 ];
 
 export const semis = [
