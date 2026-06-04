@@ -61,18 +61,21 @@ export const grupos = [
 ];
 
 export const ronda32 = [
-  { home: "Bélgica", away: "México", winner: "Bélgica", note: "México cae pronto en ronda de 32" },
-  { home: "Escocia", away: "Corea del Sur", winner: "Corea del Sur", note: "Escocia eliminada por Asia" },
-  { home: "Colombia", away: "Croacia", winner: "Croacia", note: "Colombia queda en ronda de 32" },
+  { home: "Brasil", away: "Japón", winner: "Japón", note: "La gran sorpresa — Brasil eliminado en R32", tag: "BOMBA" },
+  { home: "Ecuador", away: "Senegal", winner: "Senegal", note: "Ecuador cae ante Senegal" },
+  { home: "Colombia", away: "Croacia", winner: "Croacia", note: "Croacia elimina a Colombia (mayor experiencia)" },
+  { home: "Uruguay", away: "Argentina", winner: "Argentina", note: "Argentina elimina a Uruguay" },
+  { home: "México", away: "Bélgica", winner: "Bélgica", note: "México cae como mejor tercero" },
+  { home: "Escocia", away: "Corea del Sur", winner: "Corea del Sur", note: "Corea del Sur elimina a Escocia" },
 ];
 
 export const octavos = [
-  { home: "Brasil", away: "Japón", winner: "Japón", note: "La gran sorpresa del torneo", tag: "BOMBA" },
-  { home: "Países Bajos", away: "Marruecos", winner: "Países Bajos", note: "Holanda avanza" },
-  { home: "Portugal", away: "Canadá", winner: "Portugal", note: "Portugal sin problemas" },
+  { home: "Japón", away: "España", winner: "España", note: "España frena la racha japonesa" },
+  { home: "Países Bajos", away: "Marruecos", winner: "Países Bajos", note: "Holanda avanza sin problemas" },
+  { home: "Portugal", away: "Croacia", winner: "Portugal", note: "Portugal elimina a Croacia" },
   { home: "Inglaterra", away: "Alemania", winner: "Inglaterra", note: "Clásico europeo — pasan los ingleses" },
   { home: "Argentina", away: "Corea del Sur", winner: "Argentina", note: "Argentina avanza a cuartos" },
-  { home: "España", away: "Japón", winner: "España", note: "España domina" },
+  { home: "Francia", away: "Bélgica", winner: "Francia", note: "Francia elimina a Bélgica" },
 ];
 
 export const cuartos = [
@@ -83,9 +86,9 @@ export const cuartos = [
     note: "Messi vs Cristiano — el Último Baile",
     tag: "HISTÓRICO",
   },
-  { home: "Países Bajos", away: "Francia", winner: "Países Bajos", note: "Holanda elimina al favorito" },
-  { home: "Portugal", away: "España", winner: "Portugal", note: "Portugal a semis" },
-  { home: "Países Bajos", away: "Inglaterra", winner: "Países Bajos", note: "Holanda pasa a semis" },
+  { home: "Países Bajos", away: "Francia", winner: "Países Bajos", note: "Holanda elimina a Francia" },
+  { home: "España", away: "Japón", winner: "España", note: "España avanza a semis" },
+  { home: "Inglaterra", away: "Croacia", winner: "Inglaterra", note: "Inglaterra avanza a semis" },
 ];
 
 export const semis = [
@@ -93,9 +96,9 @@ export const semis = [
     home: "Portugal",
     away: "Inglaterra",
     winner: "Portugal",
-    note: "Revenge 2006 — 20 años después, Portugal vuelve a eliminar a Inglaterra",
+    note: "Semis europeas — Portugal deja fuera a Inglaterra",
   },
-  { home: "Países Bajos", away: "España", winner: "Países Bajos", note: "La Naranja aplasta a La Roja" },
+  { home: "Países Bajos", away: "España", winner: "Países Bajos", note: "Reedición final 2010 — Holanda a la final" },
 ];
 
 export const final = {
