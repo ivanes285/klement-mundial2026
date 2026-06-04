@@ -25,31 +25,32 @@ const Flag = ({ country, size = 32 }) => {
   );
 };
 
-const MatchCard = ({ home, away, winner, note, tag, isChampion }) => {
+const MatchCard = ({ home, away, winner, note, tag, isChampion, confirmed = true }) => {
   const homeWon = winner === home;
   const awayWon = winner === away;
+  const unspecified = winner === "?" || confirmed === false;
 
   return (
     <motion.div
-      className={`match-card ${isChampion ? "match-champion" : ""}`}
+      className={`match-card ${isChampion ? "match-champion" : ""} ${unspecified ? "match-unspecified" : ""}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
     >
-      {tag && <span className="tag">{tag}</span>}
+      {tag && <span className={`tag ${tag === "CONFIRMADO" ? "tag-confirmed" : ""}`}>{tag}</span>}
       {note && <p className="match-note">{note}</p>}
       <div className="match-teams">
-        <div className={`team-side ${homeWon ? "won" : "lost"}`}>
+        <div className={`team-side ${unspecified ? "" : homeWon ? "won" : "lost"}`}>
           <Flag country={home} size={36} />
           <span className="team-name">{home}</span>
-          {homeWon && <span className="winner-dot" />}
+          {!unspecified && homeWon && <span className="winner-dot" />}
         </div>
         <div className="vs-label">vs</div>
-        <div className={`team-side right ${awayWon ? "won" : "lost"}`}>
-          {awayWon && <span className="winner-dot" />}
+        <div className={`team-side right ${unspecified ? "" : awayWon ? "won" : "lost"}`}>
+          {!unspecified && awayWon && <span className="winner-dot" />}
           <span className="team-name">{away}</span>
-          <Flag country={away} size={36} />
+          {away !== "?" && <Flag country={away} size={36} />}
         </div>
       </div>
       {isChampion && (

@@ -61,21 +61,21 @@ export const grupos = [
 ];
 
 export const ronda32 = [
-  { home: "Brasil", away: "Japón", winner: "Japón", note: "La gran sorpresa — Brasil eliminado en R32", tag: "BOMBA" },
-  { home: "Ecuador", away: "Senegal", winner: "Senegal", note: "Ecuador cae ante Senegal" },
-  { home: "Colombia", away: "Croacia", winner: "Croacia", note: "Croacia elimina a Colombia (mayor experiencia)" },
-  { home: "Uruguay", away: "Argentina", winner: "Argentina", note: "Argentina elimina a Uruguay" },
-  { home: "México", away: "Bélgica", winner: "Bélgica", note: "México cae como mejor tercero" },
-  { home: "Escocia", away: "Corea del Sur", winner: "Corea del Sur", note: "Corea del Sur elimina a Escocia" },
+  { home: "Brasil", away: "Japón", winner: "Japón", note: "La gran sorpresa — Brasil eliminado en R32", tag: "CONFIRMADO", confirmed: true },
+  { home: "Ecuador", away: "Senegal", winner: "Senegal", note: "Ecuador cae ante Senegal", tag: "CONFIRMADO", confirmed: true },
+  { home: "Colombia", away: "Croacia", winner: "Croacia", note: "Croacia elimina a Colombia", tag: "CONFIRMADO", confirmed: true },
+  { home: "Uruguay", away: "Argentina", winner: "Argentina", note: "Argentina elimina a Uruguay", tag: "CONFIRMADO", confirmed: true },
+  { home: "México", away: "Bélgica", winner: "Bélgica", note: "México cae como mejor tercero", tag: "CONFIRMADO", confirmed: true },
+  { home: "Escocia", away: "Corea del Sur", winner: "Corea del Sur", note: "Corea del Sur elimina a Escocia", tag: "CONFIRMADO", confirmed: true },
 ];
 
 export const octavos = [
-  { home: "Japón", away: "España", winner: "España", note: "España frena la racha japonesa" },
-  { home: "Países Bajos", away: "Marruecos", winner: "Países Bajos", note: "Holanda avanza sin problemas" },
-  { home: "Portugal", away: "Croacia", winner: "Portugal", note: "Portugal elimina a Croacia" },
-  { home: "Inglaterra", away: "Alemania", winner: "Inglaterra", note: "Clásico europeo — pasan los ingleses" },
-  { home: "Argentina", away: "Corea del Sur", winner: "Argentina", note: "Argentina avanza a cuartos" },
-  { home: "Francia", away: "Bélgica", winner: "Francia", note: "Francia elimina a Bélgica" },
+  { home: "Japón", away: "España", winner: "?", note: "No especificado por Klement", confirmed: false },
+  { home: "Países Bajos", away: "Marruecos", winner: "?", note: "No especificado por Klement", confirmed: false },
+  { home: "Portugal", away: "Croacia", winner: "?", note: "No especificado por Klement", confirmed: false },
+  { home: "Inglaterra", away: "Alemania", winner: "?", note: "No especificado por Klement", confirmed: false },
+  { home: "Argentina", away: "Corea del Sur", winner: "?", note: "No especificado por Klement", confirmed: false },
+  { home: "Francia", away: "Bélgica", winner: "?", note: "No especificado por Klement", confirmed: false },
 ];
 
 export const cuartos = [
@@ -84,11 +84,12 @@ export const cuartos = [
     away: "Portugal",
     winner: "Portugal",
     note: "Messi vs Cristiano — el Último Baile",
-    tag: "HISTÓRICO",
+    tag: "CONFIRMADO",
+    confirmed: true,
   },
-  { home: "Países Bajos", away: "Francia", winner: "Países Bajos", note: "Holanda elimina a Francia" },
-  { home: "España", away: "Corea del Sur", winner: "España", note: "España avanza a semis" },
-  { home: "Inglaterra", away: "Alemania", winner: "Inglaterra", note: "Inglaterra avanza a semis" },
+  { home: "Países Bajos", away: "Francia", winner: "Países Bajos", note: "Holanda elimina a Francia", tag: "CONFIRMADO", confirmed: true },
+  { home: "España", away: "?", winner: "España", note: "Rival no especificado por Klement", confirmed: false },
+  { home: "Inglaterra", away: "?", winner: "Inglaterra", note: "Rival no especificado por Klement", confirmed: false },
 ];
 
 export const semis = [
@@ -96,9 +97,11 @@ export const semis = [
     home: "Portugal",
     away: "Inglaterra",
     winner: "Portugal",
-    note: "Semis europeas — Portugal deja fuera a Inglaterra",
+    note: "Semis europeas — Portugal elimina a Inglaterra",
+    tag: "CONFIRMADO",
+    confirmed: true,
   },
-  { home: "Países Bajos", away: "España", winner: "Países Bajos", note: "Reedición final 2010 — Holanda a la final" },
+  { home: "Países Bajos", away: "España", winner: "Países Bajos", note: "Reedición final 2010 — Holanda a la final", tag: "CONFIRMADO", confirmed: true },
 ];
 
 export const final = {
